@@ -41,6 +41,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("1");
     return Consumer<BucketService>(
       builder: (context, bucketService, child) {
         List<Bucket> bucketList = bucketService.bucketList;
